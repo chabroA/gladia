@@ -54,6 +54,12 @@ export function parseInput(input: string): SimulationSpec {
     }
     const direction = parseDirection(dirStr);
 
+    if (x < 0 || y < 0 || x > maxX || y > maxY) {
+      throw new Error(
+        `Mower starting position outside lawn bounds: ${x} ${y}`
+      );
+    }
+
     const commands = parseCommands(commandsLine);
     programs.push({ start: { x, y, direction }, commands });
   }
