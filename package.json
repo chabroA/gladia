@@ -1,0 +1,17 @@
+{
+  "name": "gladia-mower",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "ts-node src/index.ts",
+    "demo": "ts-node src/index.ts scripts/sample_input.txt",
+    "test": "ts-node scripts/verify-sample.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.10",
+    "@types/node": "^24.2.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
