@@ -1,0 +1,9 @@
+  5   5  
+
+1   2    N
+ F   F R  F   
+
+3 3  E
+  F F R F R R F  
+
+

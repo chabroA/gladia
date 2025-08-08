@@ -12,28 +12,28 @@ npm install
 
 ### Run
 
-Provide a path to an input file:
+Provide a path to an input file (sample included):
 
 ```bash
-npx ts-node src/index.ts sample_input.txt
+npm run start tests/cases/sample.input.txt
 ```
 
 ### Build
 
 ```bash
 npm run build
-node dist/src/index.js sample_input.txt
+node dist/src/index.js tests/cases/sample.input.txt
 ```
 
-### Test (validates the sample from `TODO.md`)
+### Test
 
 ```bash
 npm test
 ```
 
-Expected output for `sample_input.txt`:
+The suite discovers cases in `tests/cases/`:
+- `<name>.input.txt`: input
+- `<name>.expected.txt`: expected output (on success)
+- `<name>.error.txt`: exact expected error message (on failure)
 
-```
-1 3 N
-5 1 E
-```
+Sample case lives at `tests/cases/sample.input.txt`/`.expected.txt`.

@@ -1,0 +1,11 @@
+2 2
+0 0 S
+FFF
+2 2 E
+FFF
+0 2 N
+FFF
+2 0 W
+FFF
+
+

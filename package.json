@@ -5,8 +5,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "start": "ts-node src/index.ts",
-    "demo": "ts-node src/index.ts scripts/sample_input.txt",
-    "test": "ts-node scripts/verify-sample.ts"
+    "demo": "ts-node src/index.ts tests/cases/sample.input.txt",
+    "test": "ts-node tests/run-tests.ts"
   },
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.10",
